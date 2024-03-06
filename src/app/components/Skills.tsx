@@ -1,7 +1,7 @@
 import React from 'react'
 import { SKILLS } from '../constants'
 
-const Skills = () => {
+const Skills: React.FC = () => {
     return (
         <div>
             <h3 className="text-xl text-gray-500 font-bold pb-2">

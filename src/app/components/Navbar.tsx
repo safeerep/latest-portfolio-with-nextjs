@@ -2,7 +2,7 @@ import React from 'react'
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { NAME } from '../constants';
 
-const Navbar = ({ darkModeOn, setDarkMode }: { darkModeOn: boolean, setDarkMode: any }) => {
+const Navbar: React.FC<any> = ({ darkModeOn, setDarkMode }: { darkModeOn: boolean, setDarkMode: any }) => {
     const handleDownload = () => {
         const resumeUrl = "/MERN _STACK_DEVELOPER_SAFEER_MON_EP.pdf";
         const link = document.createElement("a");

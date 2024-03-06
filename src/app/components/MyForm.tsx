@@ -103,7 +103,7 @@ const MyForm: React.FC = () => {
         id="gform"
         className="lg:w-2/4 bg-slate-700 mx-auto mt-5 px-5 lg:px-16 rounded"
         method="POST"
-        action="https://script.google.com/macros/s/AKfycbxDHGBPudYfKOyz_HtsTtLB6uAKP4ScdbiYpf-GWewe-vaFilPxBKVv2gy9rvc6Ug-uEQ/exec"
+        action="https://script.google.com/macros/s/AKfycbxSneugaxgUUhKO0ZKqekwqJCT0l3-h-jtDmjpb1PlKSbWEHacb-Nxw4sOelgSMNYSi/exec"
         onSubmit={handleSubmit}
       >
         <p className="pt-10 pb-2">Name</p>

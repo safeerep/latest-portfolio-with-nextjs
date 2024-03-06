@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 import { SERVICES } from '../constants';
 
-const Services = () => {
+const Services: React.FC = () => {
     return (
-        <section className="px-10 lg:px-32">
+        <section className="px-10 lg:px-32" id='services'>
             <div>
                 <h3 className="text-2xl py-1 text-center font-semibold">
                     SERVICES I OFFER

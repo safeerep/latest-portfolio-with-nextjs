@@ -1,58 +1,36 @@
 import React from 'react'
-import Image from 'next/image'
-import SocialMediaIcons from './SocialMediaIcons'
-import animePhoto from "../img/profile.jpg";
-import { EMAIL, NAME, ROLE, SHORT_DESCRIPTION } from '../constants';
+import { READY_TO_CONNECT_MESSAGE } from '../constants';
+import Skills from './Skills';
 
-const AboutMe = ({ darkModeOn}: { darkModeOn: boolean}) => {
+const AboutMe: React.FC = () => {
     return (
-        <section className="px-10 pb-10 lg:pb-20 lg:px-32 pt-20">
-            <div className="lg:grid lg:grid-cols-3">
-                <div className="lg:col-span-2 lg:mt-20">
-                    <h1 className="tracking-wider">Hello!</h1>
-                    <h2 className="text-3xl lg:text-6xl py-5 text-teal-600 font-bold">
-                        I&apos;m {NAME}
-                    </h2>
-                    <h3 className="text-lg lg:text-2xl py-2">
-                        { ROLE }
-                    </h3>
-                    <p className="py-2 leading-6 text-gray-600 max-w-lg ">
-                        { SHORT_DESCRIPTION }
-                    </p>
-                    <p className="text-xs lg:text-sm inline-flex my-6 tracking-wide">
-                        Get in touch 👉
-                        <span className="border-b-2 border-teal-600">
-                            { EMAIL }
-                        </span>
-                    </p>
-                    <div className="flex text-2xl justify-between lg:justify-normal lg:gap-16 text-gray-600 lg:mb-10">
-                        <SocialMediaIcons />
-                    </div>
-                </div>
-                <div className="flex justify-center mt-5 lg:mt-20">
-                    <Image
-                        src={animePhoto}
-                        alt="Anime Photo"
-                        className="rounded-full w-60 h-60 lg:w-96 lg:h-96"
-                    />
-                </div>
+        <section className="px-10 lg:px-32">
+          <div>
+            <h3 className="div-h1">ABOUT ME</h3>
+            <p className="text-center text-md text-gray-500 max-w-5xl lg:max-w-2xl mx-auto lg:text-center">
+              Here you will find more information about me, what I do, and my
+              current skills mostly in terms of programming and technology
+            </p>
+            <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-16">
+              <div>
+                <h3 className="text-xl text-gray-500 font-bold">
+                  Get to know me!
+                </h3>
+                <p className="text-gray-600 mt-5 lg:text-lg">
+                  I am a self thought MERN Full Stack Developer with strong foundation in MERN. Check out some of my work in the Projects section.
+                </p>
+                <p className="text-gray-600 mt-5 lg:text-lg">
+                  {READY_TO_CONNECT_MESSAGE}
+                </p>
+                <a href="#contact">
+                  <div className="flex items-center button-style my-6 w-fit">
+                    <p>Contact Me</p>
+                  </div>
+                </a>
+              </div>
+              <Skills />
             </div>
-            <div className="my-5 text-center hidden lg:block">
-                {darkModeOn ? (
-                    <div className="scroll-downs">
-                        <div className="mousey">
-                            <div className="scroller"></div>
-                        </div>
-                    </div>
-                ) : (
-                    <div className="scroll-downs">
-                        <div className="mousey-dark">
-                            <div className="scroller-dark"></div>
-                        </div>
-                    </div>
-                )}
-                <p className="mt-5 text-gray-700">Scroll Down</p>
-            </div>
+          </div>
         </section>
     )
 }
