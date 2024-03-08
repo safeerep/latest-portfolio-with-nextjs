@@ -17,7 +17,7 @@ const AboutMe: React.FC = () => {
                   Get to know me!
                 </h3>
                 <p className="text-gray-600 mt-5 lg:text-lg">
-                  I am a self thought MERN Full Stack Developer with strong foundation in MERN. Check out some of my work in the Projects section.
+                  I am a self taught MERN Full Stack Developer with strong foundation in MERN. Check out some of my work in the Projects section.
                 </p>
                 <p className="text-gray-600 mt-5 lg:text-lg">
                   {READY_TO_CONNECT_MESSAGE}
