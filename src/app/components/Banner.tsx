@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import SocialMediaIcons from './SocialMediaIcons'
-import animePhoto from "../img/profile.jpg";
+import profilePhot from "../img/profile.jpg";
 import { EMAIL, NAME, ROLE, SHORT_DESCRIPTION } from '../constants';
 
 const Banner: React.FC<any> = ({ darkModeOn}: { darkModeOn: boolean}) => {
@@ -31,9 +31,9 @@ const Banner: React.FC<any> = ({ darkModeOn}: { darkModeOn: boolean}) => {
                 </div>
                 <div className="flex justify-center mt-5 lg:mt-20">
                     <Image
-                        src={animePhoto}
-                        alt="Anime Photo"
-                        className="rounded-full w-60 h-60 lg:w-96 lg:h-96"
+                        src={profilePhot}
+                        alt="profilephoto"
+                        className="rounded-full w-60 h-60 lg:w-96 lg:h-96 object-cover"
                     />
                 </div>
             </div>
