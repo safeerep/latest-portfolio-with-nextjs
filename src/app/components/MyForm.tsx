@@ -101,7 +101,8 @@ const MyForm: React.FC = () => {
 
       <form
         id="gform"
-        className="lg:w-2/4 bg-slate-700 mx-auto mt-5 px-5 lg:px-16 rounded"
+        // bg-slate-700
+        className="lg:w-2/4 border border-black  mx-auto mt-5 px-5 lg:px-16 rounded"
         method="POST"
         action="https://script.google.com/macros/s/AKfycbxSneugaxgUUhKO0ZKqekwqJCT0l3-h-jtDmjpb1PlKSbWEHacb-Nxw4sOelgSMNYSi/exec"
         onSubmit={handleSubmit}

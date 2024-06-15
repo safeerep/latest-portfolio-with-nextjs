@@ -23,7 +23,7 @@ export default function Home() {
         <Services />
         <AboutMe />
         <ProjectSession />
-        <OngoingProject />
+        {/* <OngoingProject /> */}
         <Contact />
         <Footer />
       </main>

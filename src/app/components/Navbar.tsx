@@ -13,7 +13,9 @@ const Navbar: React.FC<any> = ({ darkModeOn, setDarkMode }: { darkModeOn: boolea
 
     return (
         <nav className="px-10 lg:px-32 py-5 mb-5 flex justify-between fixed bg-slate-800 w-full backdrop-filter backdrop-blur-lg bg-opacity-30 z-10">
-            <h1 className="">{NAME}</h1>
+            <a href='/#'>
+            <h1 className="hover:text-cyan-300 cursor-pointer tracking-wide">{NAME}</h1>
+            </a>
             <ul className="flex items-center">
                 <li className="cursor-pointer">
                     {!darkModeOn ? (

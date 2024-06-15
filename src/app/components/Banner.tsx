@@ -21,9 +21,9 @@ const Banner: React.FC<any> = ({ darkModeOn}: { darkModeOn: boolean}) => {
                     </p>
                     <p className="text-xs lg:text-sm inline-flex my-6 tracking-wide">
                         Get in touch 👉
-                        <span className="border-b-2 border-teal-600">
+                        <a href='mailto:safeerep77@gmail.com' className="border-b-2 border-teal-600">
                             { EMAIL }
-                        </span>
+                        </a>
                     </p>
                     <div className="flex text-2xl justify-between lg:justify-normal lg:gap-16 text-gray-600 lg:mb-10">
                         <SocialMediaIcons />
