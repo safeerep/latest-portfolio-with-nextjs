@@ -17,8 +17,8 @@ const Services: React.FC = () => {
             <div className="lg:flex lg:gap-20">
                 {
                     SERVICES.map((service) => (
-                        <div key={service.name} className="flex flex-col items-center text-center p-10 my-10 shadow-xl rounded-xl dark:bg-gray-800">
-                            <Image src={service?.image} alt="service-logo" className='rounded-sm' width={100} height={100} />
+                        <div key={service.name} className="flex flex-col items-center text-center p-10 my-10 shadow-xl rounded-xl dark:bg-gray-800 flex-grow flex-1">
+                            <Image src={service?.image} alt="service-logo" className='rounded-sm' width={80} height={80} />
                             <h3 className="text-lg font-bold pt-8 pb-2">{service.name}</h3>
                             <p className="py-2">
                                 {service.description}

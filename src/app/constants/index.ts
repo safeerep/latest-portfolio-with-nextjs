@@ -48,30 +48,31 @@ export const SKILLS = [
 import Code from "../img/code.png";
 import VersionControll from "../img/git-logo.png";
 import Play from "../img/games.png";
+import APIDevelopment from "../img/APIDevelopment.png"
 export const SERVICES = [
   {
-    name: "Web Development",
+    name: "Full-Stack Engineering",
     image: Code,
     description:
-      "I specialize in writing clean, efficient code to bring innovative web solutions to life.",
-    category: "Development",
-    by: "MERN",
+      "I engineer scalable web applications using the MERN stack, specializing in both monolithic and microservice architectures. My solutions emphasize high performance, security, and user experience.",
+    category: "Engineering",
+    by: "MERN Stack",
   },
   {
-    name: "Version Controll",
+    name: "API Development & Integration",
+    image: APIDevelopment,
+    description:
+      "I build secure and scalable APIs with Node.js and Python FastAPI, ensuring efficient communication between services and handling high traffic effectively.",
+    category: "Development",
+    by: "Node.js, FastAPI",
+  },
+  {
+    name: "Version Control & Project Management",
     image: VersionControll,
     description:
-      "With expertise in version control systems, I facilitate cohesive project collaboration.",
+      "I manage and deliver software projects efficiently using Git-based version control (GitHub, Bitbucket) and agile tools (Jira, Trello) for smooth collaboration and timely releases.",
     category: "Deployment",
-    by: "Git",
-  },
-  {
-    name: "Maintenance",
-    image: Play,
-    description:
-      "I take care of ongoing services by fixing issues to enhancing performance.",
-    category: "Service",
-    by: "Research",
+    by: "GitHub, Bitbucket, Jira, Trello",
   },
 ];
 

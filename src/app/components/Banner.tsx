@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import SocialMediaIcons from './SocialMediaIcons'
-import profilePhot from "../img/profile.jpg";
+import profilePhoto from "../img/profile.jpg";
 import { EMAIL, NAME, ROLE, SHORT_DESCRIPTION } from '../constants';
 
 const Banner: React.FC<any> = ({ darkModeOn}: { darkModeOn: boolean}) => {
@@ -9,11 +9,11 @@ const Banner: React.FC<any> = ({ darkModeOn}: { darkModeOn: boolean}) => {
     <section className="px-10 pb-10 lg:pb-20 lg:px-32 pt-20">
             <div className="lg:grid lg:grid-cols-3">
                 <div className="lg:col-span-2 lg:mt-20">
-                    <h1 className="tracking-wider">Hello!</h1>
-                    <h2 className="text-3xl lg:text-6xl py-5 text-teal-600 font-bold">
+                    <h3 className="tracking-wider text-teal-600">Hello!</h3>
+                    <h2 className="text-xl py-3 font-bold tracking-widest">
                         I&apos;m {NAME}
                     </h2>
-                    <h3 className="text-lg lg:text-2xl py-2">
+                    <h3 className="text-teal-600">
                         { ROLE }
                     </h3>
                     <p className="py-2 leading-6 text-gray-600 max-w-lg ">
@@ -31,7 +31,7 @@ const Banner: React.FC<any> = ({ darkModeOn}: { darkModeOn: boolean}) => {
                 </div>
                 <div className="flex justify-center mt-5 lg:mt-20">
                     <Image
-                        src={profilePhot}
+                        src={profilePhoto}
                         alt="profilephoto"
                         className="rounded-full w-60 h-60 lg:w-96 lg:h-96 object-cover"
                     />
