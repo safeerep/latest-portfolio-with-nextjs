@@ -47,7 +47,6 @@ export const SKILLS = [
 // MAIN SERVICES - MAXIMUM 3
 import Code from "../img/code.png";
 import VersionControll from "../img/git-logo.png";
-import Play from "../img/games.png";
 import APIDevelopment from "../img/APIDevelopment.png"
 export const SERVICES = [
   {

@@ -25,7 +25,7 @@ const Banner: React.FC<any> = ({ darkModeOn}: { darkModeOn: boolean}) => {
                             { EMAIL }
                         </a>
                     </p>
-                    <div className="flex text-2xl justify-between lg:justify-normal lg:gap-16 text-gray-600 lg:mb-10">
+                    <div className="flex text-2xl justify-between sm:justify-start lg:gap-16 text-gray-600 lg:mb-10">
                         <SocialMediaIcons />
                     </div>
                 </div>
